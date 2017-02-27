@@ -4,7 +4,7 @@
     'description': """
         Learning Odoo Theme Builder
     """,
-    'category': 'Theme',
+    'category': 'Theme/Creative',
     'version': '1.0',
     'depends': ['website'],
 

@@ -1,0 +1,4 @@
+Structure of an odoo Page
+An odoo Page is the visual result of a combination of 2 kind of elemets
+	1. Cross-Pages(Header, Footer)
+	2. Unique(your Content)
