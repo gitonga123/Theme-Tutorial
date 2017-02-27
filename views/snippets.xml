@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 	<data>
+
+		<template id="place_into_bar" inherit_id="website.snippets" name="Place in the Bar">
+			<xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+				<t t-snippet="theme_tutorial.snippet_testimonial" t-thumbnails="/theme_tutorial/static/img/image2.jpeg"/>
+			</xpath>
+		</template>
+
+		<template id="snippet_testimonial" name="Book List" >
+			<section class="snippet_testimonial">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table table-stripped">
+								<thead>
+									<tr>
+										<th>Book Name</th>
+										<th>Book Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>American Soilder</td>
+										<td>500</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</template>
+
 	</data>
 </openerp>

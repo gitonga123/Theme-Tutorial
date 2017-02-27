@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 	<data>
+		<template name="Services Page" id="website.services" page="True">
+			<t t-call="website.layout">
+				<div id="wrap">
+					<div class="container">
+						<h1>Our Services</h1>
+						<ul class="services">
+							<l1>Cloud Hosting</l1>
+							<li>Support</li>
+							<l1>Unlimted Space</l1>
+						</ul>
+
+						<div class="oe_structure" />
+
+					</div>
+				</div>
+			</t>
+		</template>
+
+		<record id="services_page_link" model="website.menu">
+			<field name="name">Services</field>
+			<field name="url">/page/services</field>
+			<field name="parent_id" ref="website.main_menu" />
+			<field name="sequence" type="int">99</field>
+		</record>
 	</data>
 </openerp>
+

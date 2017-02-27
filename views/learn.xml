@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<template id="learning_templates_bar" inherit_id="website.snippets" name="Learning Snippet">
+			<xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+				<t t-snippet="theme_tutorial.learning_snippets" t-thumbnail="/theme_tutorial/static/img/book.jpg"/>
+			</xpath>
+		</template>
+
+		<template id="learning_snippets" name="Image Flicker">
+			<section id="learning_snippets">
+				<div class="container">
+					<h2 class="w3-center">Manual Slideshow</h2>
+
+					<div class="w3-content w3-display-container">
+					  <img class="mySlides" src="/theme_tutorial/static/img/img_fjords.jpg" style="width:100%" />
+					  <img class="mySlides" src="/theme_tutorial/static/img/img_lights.jpg" style="width:100%" />
+					  <img class="mySlides" src="/theme_tutorial/static/img/img_mountains.jpg" style="width:100%" />
+					  <img class="mySlides" src="/theme_tutorial/static/img/img_forest.jpg" style="width:100%" />
+
+					  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				</div>
+			</section>
+		</template>
+	</data>
+</openerp>

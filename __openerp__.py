@@ -12,6 +12,9 @@
     'data': [
         'views/options.xml',
         'views/snippets.xml',
+        'views/assets.xml',
+        'views/page.xml',
+        'views/learn.xml',
     ],
 
     # demo pages
