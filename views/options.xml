@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 	<data>
-		<template id="custom_header" inherit_id="website.layout" name="custom Header">
-			<xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-				<attribute name="id">my_header</attribute>
-			</xpath>
+		<template id="website.homepage" name="Homepage" page="True">
+			<t t-call="website.layout">
+				<div id="wrap" class="oe_structure">
+					<h1 class="alert alert-info">Hello, World</h1>
+				</div>
+			</t>
 		</template>
-
-
 	</data>
 </openerp>
 

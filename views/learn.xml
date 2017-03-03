@@ -1,28 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 	<data>
-		<template id="learning_templates_bar" inherit_id="website.snippets" name="Learning Snippet">
+		<template id="my_theme_snippets" inherit_id="website.snippets" name="My Theme Snippets">
 			<xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
-				<t t-snippet="theme_tutorial.learning_snippets" t-thumbnail="/theme_tutorial/static/img/book.jpg"/>
+				<t t-snippet="theme_tutorial.snippet_testimonial" t-thumbnail="/theme_tutorial/static/img/image2.jpeg" />
 			</xpath>
 		</template>
 
-		<template id="learning_snippets" name="Image Flicker">
-			<section id="learning_snippets">
-				<div class="container">
-					<h2 class="w3-center">Manual Slideshow</h2>
-
-					<div class="w3-content w3-display-container">
-					  <img class="mySlides" src="/theme_tutorial/static/img/img_fjords.jpg" style="width:100%" />
-					  <img class="mySlides" src="/theme_tutorial/static/img/img_lights.jpg" style="width:100%" />
-					  <img class="mySlides" src="/theme_tutorial/static/img/img_mountains.jpg" style="width:100%" />
-					  <img class="mySlides" src="/theme_tutorial/static/img/img_forest.jpg" style="width:100%" />
-
-					  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-					  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		<template id="snippet_testimonial" name="Snippets Learning">
+			<section class="snippet_testimonial">
+				<div class="w3-container">
+  					<h2>Slideshow Caption</h2>
+  				</div>
+  				<div class="w3-content w3-display-container">
+  					<div class="w3-display-container mySlides">
+  						<img src="/theme_tutorial/static/img/img_fjords.jpg" style="width:100%" />
+					  	<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					    	Trolltunga, Norway
+					  	</div>
 					</div>
+
+					<div class="w3-display-container mySlides">
+					  <img src="/theme_tutorial/static/img/img_lights.jpg" style="width:100%" />
+					  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black" >
+					    Northern Lights, Norway
+					  </div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  <img src="/theme_tutorial/static/img/img_mountains.jpg" style="width:100%" />
+					  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black" >
+					    Beautiful Mountains
+					  </div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  <img src="/theme_tutorial/static/img/img_forest.jpg" style="width:100%" />
+					  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black" >
+					    The Rain Forest
+					  </div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  <img src="/theme_tutorial/static/img/img_mountains.jpg" style="width:100%" />
+					  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black" >
+					    Mountains!
+					  </div>
+					</div>
+
+					<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+					
 				</div>
 			</section>
 		</template>
+
 	</data>
 </openerp>
